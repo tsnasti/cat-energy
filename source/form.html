@@ -41,105 +41,113 @@
     <section class="questionary">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="questionary__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="questionary__field-group questionary__field-group--cat-information">
-          <ul class="questionary__list questionary__list--cat-information">
-            <li class="questionary__item questionary__item--cat-information">
-              <label class="questionary__label" for="cat-name-field">Имя:*</label>
-              <input class="questionary__field" type="text" id="cat-name-field" name="cat-name" placeholder="Барсик" required>
-            </li>
-            <li class="questionary__item questionary__item--cat-information">
-              <label class="questionary__label" for="cat-weight-field">Вес (кг):*</label>
-              <input class="questionary__field" type="text" id="cat-weight-field" name="cat-weight" placeholder="7" required>
-            </li>
-            <li class="questionary__item questionary__item--cat-information">
-              <label class="questionary__label" for="cat-age-field">Возраст (лет):</label>
-              <input class="questionary__field" type="text" id="cat-age-field" name="cat-age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="questionary__field-group questionary__field-group--goals">
-          <ul class="questionary__list questionary__list--goals">
-            <li class="questionary__item questionary__item--goals">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--goals" type="radio" name="slimming" value="slimming"
-                  checked>
-                <span class="questionary__mark"></span>
-                <span class="questionary__label">Похудение</span>
+        <fieldset class="questionary__field-group questionary__field-group--cat-information personal-information">
+          <ul class="questionary__list questionary__list--cat-information personal-information__list">
+            <li class="questionary__item questionary__item--cat-information personal-information__item">
+              <label class="questionary__label-group personal-information__label-group name">
+                <span class="questionary__label personal-information__label name__label">Имя:*</span>
+                <input class="questionary__field personal-information__field name__field" type="text" id="cat-name-field" name="cat-name" placeholder="Барсик" required>
               </label>
             </li>
-            <li class="questionary__item questionary__item--goals">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--goals" type="radio" name="weight" value="weight">
-                <span class="questionary__mark"></span>
-                <span class="questionary__label">Набор массы</span>
+            <li class="questionary__item questionary__item--cat-information personal-information__item">
+              <label class="questionary__label personal-information__label-group weight">
+                <span class="questionary__label personal-information__label weight__label">Вес (кг):*</span>
+                <input class="questionary__field personal-information__field weight__field" type="text" id="cat-weight-field" name="cat-weight" placeholder="7" required>
               </label>
             </li>
-            <li class="questionary__item questionary__item--goals">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--goals" type="radio" name="not-know" value="not-know">
-                <span class="questionary__mark"></span>
-                <span class="questionary__label">Не знаю (Нужен ваш совет)</span>
+            <li class="questionary__item questionary__item--cat-information personal-information__item">
+              <label class="questionary__label personal-information__label-group age" for="cat-age-field">
+                <span class="questionary__label personal-information__label age__label">Возраст (лет):</span>
+                <input class="questionary__field personal-information__field age__field" type="text" id="cat-age-field" name="cat-age" placeholder="7">
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="questionary__field-group questionary__field-group--contacts">
-          <legend class="questionary__legend">Контактные данные (владельца кота)</legend>
-          <ul class="questionary__list questionary__list--contacts">
-            <li class="questionary__item questionary__item--contacts">
-              <label class="questionary__label" for="email-field">E-mail:*</label>
-              <input class="questionary__field" type="text" id="email-field" name="email" placeholder="kuklachev@gmail.com" required>
+        <fieldset class="questionary__field-group questionary__field-group--goals sample">
+          <ul class="questionary__list questionary__list--goals sample__list sample__list--radio">
+            <li class="questionary__item questionary__item--goals sample__item sample__item--radio">
+              <label class="questionary__label-group sample__label-group sample__label-group--radio">
+                <input class="visually-hidden questionary__field sample__field sample__field--radio" type="radio" name="options" value="slimming" checked>
+                <span class="questionary__label sample__label sample__label--radio">Похудение</span>
+              </label>
             </li>
-            <li class="questionary__item questionary__item--contacts">
-              <label class="questionary__label" for="phone-field">Телефон:*</label>
-              <input class="questionary__field" type="text" id="phone-field" name="phone" placeholder="8 (960) 900-60-90" required>
+            <li class="questionary__item questionary__item--goals sample__item sample__item--radio">
+              <label class="questionary__label-group sample__label-group sample__label-group--radio">
+                <input class="visually-hidden questionary__field sample__field sample__field--radio" type="radio" name="options" value="weight">
+                <span class="questionary__label sample__label sample__label--radio">Набор массы</span>
+              </label>
+            </li>
+            <li class="questionary__item questionary__item--goals sample__item sample__item--radio">
+              <label class="questionary__label-group sample__label-group sample__label-group--radio">
+                <input class="visually-hidden questionary__field sample__field sample__field--radio" type="radio" name="options" value="not-know">
+                <span class="questionary__label sample__label sample__label--radio">Не знаю (Нужен ваш совет)</span>
+              </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="questionary__field-group questionary__field-group--contacts">
-          <legend class="questionary__legend">Комментарий</legend>
-          <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота</textarea>
+        <fieldset class="questionary__field-group questionary__field-group--contacts personal-information">
+          <legend class="questionary__legend personal-information__legend">Контактные данные (владельца кота)</legend>
+          <ul class="questionary__list questionary__list--contacts personal-information__list">
+            <li class="questionary__item questionary__item--contacts personal-information__item">
+              <label class="questionary__label-group personal-information__label-group mail">
+                <span class="questionary__label personal-information__label mail__label">E-mail:*</span>
+                <input class="questionary__field personal-information__field mail__field" type="email" id="email-field" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="questionary__item questionary__item--contacts personal-information__item">
+              <label class="questionary__label-group personal-information__item__label-group telephone">
+                <span class="questionary__label personal-information__item__label telephone__label">Телефон:*</span>
+                <input class="questionary__field personal-information__item__field telephone__field" type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="questionary__field-group questionary__field-group--additional">
-          <legend class="questionary__legend">Дополнительно</legend>
-          <ul class="questionary__list questionary__list--additional">
-            <li class="questionary__item questionary__item--additional">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--additional" type="checkbox" name="sweetener" checked>
-                <span class="questionary__mark questionary__mark-checkbox"></span>
-                <span class="questionary__label">Сахарозаменитель</span>
+        <fieldset class="questionary__field-group questionary__field-group--comment personal-information">
+          <legend class="questionary__legend personal-information__legend">Комментарий</legend>
+          <label class="questionary__label-group personal-information__label-group personal-information__label-group--textarea">
+            <input class="questionary__field personal-information__field personal-information__field--textarea" type="text" id="information-habits" name="habits" placeholder="Расскажите обо всех повадках кота">
+          </label>
+        </fieldset>
+
+        <fieldset class="questionary__field-group questionary__field-group--additional sample">
+          <legend class="questionary__legend sample__legend">Дополнительно</legend>
+          <ul class="questionary__list questionary__list--additional sample__list sample__list--checkbox">
+            <li class="questionary__item questionary__item--additional sample__item sample__item--checkbox">
+              <label class="questionary__label-group sample__label-group sample__label-group--checkbox">
+                <input class="visually-hidden questionary__field sample__field sample__field--checkbox" type="checkbox" name="sweetener" checked>
+                <span class="questionary__mark-checkbox sample__mark-checkbox"></span>
+                <span class="questionary__label sample__label sample__label--checkbox">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="questionary__item questionary__item--additional">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--additional" type="checkbox" name="water">
-                <span class="questionary__mark questionary__mark-checkbox"></span>
-                <span class="questionary__label">Питьевая вода</span>
+            <li class="questionary__item questionary__item--additional sample__item sample__item--checkbox">
+              <label class="questionary__label-group sample__label-group sample__label-group--checkbox">
+                <input class="visually-hidden questionary__field sample__field sample__field--checkbox" type="checkbox" name="water">
+                <span class="questionary__mark-checkbox sample__mark-checkbox"></span>
+                <span class="questionary__label sample__label sample__label--checkbox">Питьевая вода</span>
               </label>
             </li>
-            <li class="questionary__item questionary__item--additional">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--additional" type="checkbox" name="milk">
-                <span class="questionary__mark questionary__mark-checkbox"></span>
-                <span class="questionary__label">Молоко</span>
+            <li class="questionary__item questionary__item--additional sample__item sample__item--checkbox">
+              <label class="questionary__label-group sample__label-group sample__label-group--checkbox">
+                <input class="visually-hidden questionary__field sample__field sample__field--checkbox" type="checkbox" name="milk">
+                <span class="questionary__mark-checkbox sample__mark-checkbox"></span>
+                <span class="questionary__label sample__label sample__label--checkbox">Молоко</span>
               </label>
             </li>
-            <li class="questionary__item questionary__item--additional">
-              <label class="questionary__label-group">
-                <input class="visually-hidden questionary__field questionary__field--additional" type="checkbox" name="vitamins">
-                <span class="questionary__mark questionary__mark-checkbox"></span>
-                <span class="questionary__label">Витамины</span>
+            <li class="questionary__item questionary__item--additional sample__item sample__item--checkbox">
+              <label class="questionary__label-group sample__label-group sample__label-group--checkbox">
+                <input class="visually-hidden questionary__field sample__field sample__field--checkbox" type="checkbox" name="vitamins">
+                <span class="questionary__mark-checkbox sample__mark-checkbox"></span>
+                <span class="questionary__label sample__label sample__label--checkbox">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <button class="questionary__button button" type="submit">Отправить заявку</button>
       </form>
-      <p class="questionary__note">
+      <p class="questionary__note note">
         <small>* — Обязательные поля</small>
       </p>
     </section>
@@ -189,4 +197,3 @@
 </body>
 
 </html>
-
