@@ -1,14 +1,5 @@
 .questionary {
   margin-bottom: 32px;
-
-  input {
-    font: inherit;
-    text-transform: uppercase;
-
-    &::placeholder {
-      color: @text-gray;
-    }
-  }
 }
 
 .questionary__legend {
@@ -16,29 +7,14 @@
   font-size: 24px;
   line-height: 26px;
   color: @text-black;
+  text-transform: none;
 }
 
 .questionary__field-group {
   .clear-fieldset();
   margin-bottom: 23px;
-
-  &--cat-information {
-    margin-bottom: 46px;
-  }
-
-  &--goals {
-    margin-bottom: 46px;
-  }
 }
 
 .questionary__list {
   .clear-list();
-}
-
-.questionary__note {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: @text-black;
-  text-transform: none;
 }
