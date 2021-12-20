@@ -1,3 +1,28 @@
 .page-footer {
   background-color: @background-color-gray;
 }
+
+.page-footer__container {
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  .tablet({
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 56px;
+  });
+
+  .desktop({
+    padding-top: 59px;
+    padding-bottom: 56px;
+  });
+}
+
+.page-footer__logo-link {
+  display: block;
+
+  img {
+    display: block;
+  }
+}

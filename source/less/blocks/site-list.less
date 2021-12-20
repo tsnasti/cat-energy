@@ -1,5 +1,16 @@
 .site-list {
   .clear-list();
+  text-align: center;
+
+  .tablet({
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  });
+
+  .desktop({
+    width: 478px;
+  });
 }
 
 .site-list__item {
@@ -11,5 +22,17 @@
     color: @text-black;
     text-decoration: none;
     text-transform: uppercase;
+
+    .tablet({
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    });
+
+    .desktop({
+      font-size: 20px;
+      line-height: 30px;
+      color: @white;
+    });
   }
 }

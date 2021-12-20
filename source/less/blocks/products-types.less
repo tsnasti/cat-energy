@@ -1,13 +1,38 @@
+.products-types {
+  margin-bottom: 20px;
+
+  .tablet({
+    margin-bottom: 45px;
+  });
+
+  .desktop({
+    margin-bottom: 71px;
+  });
+}
+
 .products-types__list {
   .clear-list();
+
+  .desktop({
+    display: flex;
+  });
 }
 
 .products-types__item {
   background-color: @background-color-gray;
   margin-bottom: 20px;
+
+  .tablet({
+    margin-bottom: 30px;
+  });
+
+  .desktop({
+    margin-right: 80px;
+  });
 }
 
 .products-types__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;

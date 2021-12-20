@@ -9,3 +9,21 @@
   padding: 0;
   border: none;
 }
+
+.tablet(@rules) {
+  @media (min-width: @tablet-width) {
+    @rules();
+  }
+}
+
+.desktop(@rules) {
+  @media (min-width: @desktop-width) {
+    @rules();
+  }
+}
+
+.mobile(@rules) {
+  @media (max-width: @mobile-width-only) {
+    @rules();
+  }
+}
