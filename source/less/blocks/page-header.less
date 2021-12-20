@@ -1,22 +1,31 @@
 .page-header {
   padding-top: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   .tablet({
     padding-top: 26px;
-    margin-bottom: 62px;
+    margin-bottom: 0;
   });
 
   .desktop({
     padding-top: 56px;
-    margin-bottom: 114px;
+    margin-bottom: 82px;
+    background-color:  @background-color-green;
+    background-size: 50%;
   });
 }
 
 .page-header__container {
+  margin-bottom: 18px;
+
   .tablet({
     display: flex;
     justify-content: space-between;
+    margin-bottom: 62px;
+  });
+
+  .desktop({
+    margin-bottom: 32px;
   });
 }
 
