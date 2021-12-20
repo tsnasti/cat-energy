@@ -1,6 +1,5 @@
 .promo {
   margin-bottom: 20px;
-  padding: 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
   color: @white;
   background-color: @background-color-green;
@@ -13,12 +12,15 @@
   });
 
   .tablet({
+    margin-bottom: 0;
     background: @white;
     color: @text-black;
   });
 
   .desktop({
+    margin-bottom: 82px;
     background-color: @background-color-green;
+    background-size: 50%;
   });
 }
 
@@ -33,4 +35,10 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo__link {
+  .tablet({
+    width: 244px;
+  });
 }

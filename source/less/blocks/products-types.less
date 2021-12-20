@@ -1,10 +1,20 @@
-.products-types__list {
-  .clear-list();
-  display: flex;
-  flex-direction: column;
+.products-types {
+  margin-bottom: 20px;
+
+  .tablet({
+    margin-bottom: 45px;
+  });
 
   .desktop({
-    flex-direction: row;
+    margin-bottom: 71px;
+  });
+}
+
+.products-types__list {
+  .clear-list();
+
+  .desktop({
+    display: flex;
   });
 }
 
@@ -22,6 +32,7 @@
 }
 
 .products-types__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
