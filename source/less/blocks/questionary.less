@@ -1,5 +1,20 @@
 .questionary {
   margin-bottom: 32px;
+
+  .tablet({
+    margin-bottom: 72px;
+  });
+
+  .desktop({
+    margin-bottom: 82px;
+  });
+}
+
+.questionary__wrapper {
+  .desktop({
+    display: flex;
+    justify-content: space-between;
+  });
 }
 
 .questionary__legend {
@@ -13,8 +28,63 @@
 .questionary__field-group {
   .clear-fieldset();
   margin-bottom: 23px;
+
+  .tablet({
+    margin-bottom: 72px;
+  });
+
+  .desktop({
+    margin-bottom: 67px;
+  });
 }
 
 .questionary__list {
   .clear-list();
+
+  &--mail-phone {
+    .desktop({
+      display: flex;
+      justify-content: space-between;
+    });
+  }
+
+  &--additionaly {
+    .tablet({
+      display: flex;
+      flex-wrap: wrap;
+    });
+  }
+}
+
+.questionary__item {
+  &--additionaly:nth-child(odd) {
+    .tablet({
+      margin-right: 124px;
+    });
+  }
+
+  &--additionaly:nth-child(-n+3),
+  &--additionaly:nth-child(n+5):not(:last-child) {
+    .desktop({
+      margin-right: 105px;
+    });
+  }
+}
+
+.questionary__button-note {
+  .tablet({
+    display: flex;
+  });
+}
+
+.questionary__button {
+  .tablet({
+    width: 282px;
+    margin-right: 61px;
+  });
+
+  .desktop({
+    width: 568px;
+    margin-right: 81px;
+  });
 }

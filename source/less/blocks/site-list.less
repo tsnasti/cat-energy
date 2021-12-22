@@ -13,26 +13,27 @@
   });
 }
 
-.site-list__item {
-  a {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 500;
+.site-list__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: @text-black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  .tablet({
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  });
+
+  .desktop({
     font-size: 20px;
-    line-height: 20px;
-    color: @text-black;
-    text-decoration: none;
-    text-transform: uppercase;
+    line-height: 30px;
 
-    .tablet({
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-    });
-
-    .desktop({
-      font-size: 20px;
-      line-height: 30px;
+    &--index {
       color: @white;
-    });
-  }
+    }
+  });
 }
