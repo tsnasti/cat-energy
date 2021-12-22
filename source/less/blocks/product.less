@@ -2,6 +2,41 @@
   .clear-list();
   font-size: 12px;
   line-height: 16px;
+
+  .tablet({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  });
+
+  .desktop({
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  });
+}
+
+.product__item {
+  margin-bottom: 44px;
+
+  .tablet({
+    margin-bottom: 68px;
+    background-color: @background-color-gray;
+  });
+
+  .desktop({
+    margin-bottom: 63px;
+  });
+}
+
+.product__item:nth-child(odd) {
+  .tablet({
+    margin-right: 60px;
+  });
+}
+
+.product__item:nth-child(-n+3),
+.product__item:nth-child(n+5):not(:last-child) {
+  .desktop({
+    margin-right: 80px;
+  });
 }
 
 .product__link {
