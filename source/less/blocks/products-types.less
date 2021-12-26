@@ -15,37 +15,135 @@
 
   .desktop({
     display: flex;
+    justify-content: space-between;
   });
 }
 
 .products-types__item {
-  background-color: @background-color-gray;
+  position: relative;
+  padding: 22px 20px;
+  padding-top: 30px;
   margin-bottom: 20px;
+  background-color: @background-color-gray;
 
   .tablet({
+    padding: 57px 52px;
+    padding-top: 77px;
     margin-bottom: 30px;
   });
 
   .desktop({
-    margin-right: 80px;
+    padding-bottom: 59px;
+    margin-bottom: 0;
   });
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: 50px;
+
+    .tablet({
+      top: 35%;
+      right: 52px;
+    });
+
+    .desktop({
+      top: auto;
+      right: auto;
+    });
+  }
+
+  &--slimming::before {
+    width: 50px;
+    background-image: url("../img/cat-slim-mobile.png");
+  }
+
+  &--weight::before {
+    width: 67px;
+    background-image: url("../img/cat-weight-mobile.png");
+
+    .mobile({
+      left: 7px;
+    });
+  }
 }
 
 .products-types__title {
   margin: 0;
+  margin-bottom: 29px;
+  margin-left: 71px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: @text-black;
+  color: @black;
   text-transform: uppercase;
+
+  .tablet({
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  });
+
+  .desktop({
+    margin-bottom: 73px;
+    margin-left: 162px;
+  });
+}
+
+.products-types__description {
+  margin-bottom: 42px;
+
+  .mobile({
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @mid-gray;
+    }
+  });
+
+  .tablet({
+    width: 57%;
+    margin-bottom: 52px;
+    color: @black;
+  });
+
+  .desktop({
+    width: 467px;
+    margin-bottom: 27px;
+  });
 }
 
 .products-types__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: @text-black;
+  color: @black;
   text-transform: uppercase;
   text-decoration: none;
+
+  .tablet({
+    font-size: 20px;
+    line-height: 30px;
+  });
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.products-types__icon {
+  margin-left: 15px;
+
+  .tablet({
+    margin-left: 25px;
+  });
 }

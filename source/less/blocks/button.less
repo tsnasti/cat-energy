@@ -16,4 +16,21 @@
     color: @text-gray;
     background-color: @background-color-gray;
   }
+
+  .tablet({
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 20px;
+  });
+
+  &:hover {
+    .tablet({
+      background-color: @background-color-green-dark;
+    });
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @background-color-green-dark;
+  }
 }
