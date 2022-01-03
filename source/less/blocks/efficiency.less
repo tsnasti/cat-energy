@@ -72,6 +72,29 @@
     margin-bottom: 0;
   });
 
+  &:not(:last-child) {
+    .mobile({
+      margin-bottom: 26px;
+    });
+  }
+
+  &:last-child {
+    .mobile({
+      width: 199px;
+
+      br {
+        display: none;
+      }
+    });
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    .tablet({
+      margin-bottom: 0;
+    });
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -105,29 +128,6 @@
   }
 
   &--changes::before {
-    background-image: url("/source/img/alarm-icon.svg");
+    background-image: url("../img/alarm-icon.svg");
   }
-}
-
-.efficiency__item:not(:last-child) {
-  .mobile({
-    margin-bottom: 26px;
-  });
-}
-
-.efficiency__item:last-child {
-  .mobile({
-    width: 199px;
-
-    br {
-      display: none;
-    }
-  });
-}
-
-.efficiency__item:nth-child(3),
-.efficiency__item:nth-child(4) {
-  .tablet({
-    margin-bottom: 0;
-  });
 }

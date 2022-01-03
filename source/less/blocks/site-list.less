@@ -38,16 +38,16 @@
       background-color: @lite-gray;
     }
   });
-}
 
-.site-list__item:not(:last-child) {
-  .tablet({
-    margin-right: 34px;
-  });
+  &:not(:last-child) {
+    .tablet({
+      margin-right: 34px;
+    });
 
-  .desktop({
-    margin-right: 33px;
-  });
+    .desktop({
+      margin-right: 33px;
+    });
+  }
 }
 
 .site-list__link {
@@ -76,6 +76,14 @@
     }
   });
 
+  &[href] {
+    .tablet({
+      &:hover {
+        opacity: 0.6;
+      }
+    });
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -91,12 +99,4 @@
       border-bottom: 2px solid @white;
     });
   }
-}
-
-.site-list__link[href] {
-  .tablet({
-    &:hover {
-      opacity: 0.6;
-    }
-  });
 }
