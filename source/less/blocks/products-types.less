@@ -114,6 +114,8 @@
 }
 
 .products-types__link {
+  position: relative;
+  padding-right: 57px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -124,17 +126,29 @@
   .tablet({
     font-size: 20px;
     line-height: 30px;
+    transition: opacity 0.2s;
   });
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 100%;
+    transition: background-position 0.2s;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8px center;
+  }
+
+  &:hover {
+    &::after {
+      background-position: left center;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.products-types__icon {
-  margin-left: 15px;
-
-  .tablet({
-    margin-left: 25px;
-  });
 }

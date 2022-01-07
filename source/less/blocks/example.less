@@ -220,6 +220,49 @@
   text-align: center;
 }
 
+.example__image-wrapper {
+  .tablet({
+    display: flex;
+    justify-content: center;
+    width: 592px;
+  });
+}
+
+.example__image-container {
+  .tablet({
+    position: relative;
+    width: 50%;
+    height: 511px;
+    overflow: hidden;
+  });
+
+  &--after {
+    .mobile({
+      display: none;
+    });
+  }
+}
+
+.example__image {
+  .tablet({
+    position: absolute;
+    top: 0;
+    height: 100%;
+  });
+
+  &--before {
+    .tablet({
+      left: 0;
+    });
+  }
+
+  &--after {
+    .tablet({
+      right: 0;
+    });
+  }
+}
+
 .example__range {
   display: flex;
   justify-content: space-between;
