@@ -1,11 +1,12 @@
 .additionaly {
-  margin-bottom: 54px;
+  margin-bottom: 35px;
 
   .tablet({
     margin-bottom: 69px;
   });
 
   .desktop({
+    width: 895px;
     margin-bottom: 0;
   });
 }
@@ -17,10 +18,76 @@
   line-height: 24px;
   color: @black;
 
+  .tablet({
+    font-size: 36px;
+    line-height: 36px;
+  });
+
+  &--big {
+    position: relative;
+    width: 226px;
+    margin-top: 0;
+    margin-bottom: 36px;
+    padding-right: 22px;
+    padding-left: 20px;
+    background-color: @white;
+
+    .tablet({
+      width: 338px;
+      margin-bottom: 80px;
+      padding: 0 36px;
+    });
+
+    .desktop({
+      padding-right: 35px;
+      padding-left: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: -40px;
+        width: 380px;
+        height: 10px;
+        background-color: @white;
+        z-index: -1;
+      }
+    });
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      bottom: 60%;
+      left: -23%;
+      width: 100vw;
+      height: 2px;
+      background-color: @background-color-green;
+      z-index: -2;
+
+      .tablet({
+        left: -16%;
+      });
+
+      .desktop({
+        left: -42%;
+      });
+    }
+  }
+
   &--small {
+    margin: 0;
+    margin-bottom: 13px;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+
+    .tablet({
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 0;
+    });
   }
 }
 
@@ -28,10 +95,61 @@
   .clear-list();
 }
 
+.additionaly__item {
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid @dark-gray;
+  border-bottom: 1px solid @dark-gray;
+
+  .tablet({
+    padding: 26px 38px;
+    padding-bottom: 28px;
+    border: 1px solid @dark-gray;
+  });
+
+  .desktop({
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border: none;
+    border-top: 1px solid @dark-gray;
+    border-bottom: 1px solid @dark-gray;
+  });
+}
+
+.additionaly__wrapper {
+  .tablet({
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  });
+
+  .desktop({
+    width: 240%;
+    margin-right: 38px;
+  });
+}
+
 .additionaly__link {
   text-decoration: none;
 }
 
 .additionaly__list-specifications {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
   line-height: 14px;
+
+  .tablet({
+    font-size: 16px;
+    line-height: 20px;
+  });
+
+  .desktop({
+    width: 50%;
+    margin: 0;
+  });
 }

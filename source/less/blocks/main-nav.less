@@ -50,6 +50,18 @@
 
 .main-nav__logo-link {
   display: block;
+
+  &[href] {
+    .tablet({
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    });
+  }
 }
 
 .main-nav__logo-link:last-child {

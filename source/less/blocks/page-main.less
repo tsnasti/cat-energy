@@ -2,20 +2,48 @@
   .mobile ({
     margin-top: 190px;
   });
+
+  &--inner {
+    .mobile ({
+      margin-top: 0;
+    });
+  }
 }
 
 .page-main__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: @black;
+  margin: 0;
   text-transform: none;
+
+  &--catalog {
+    margin-bottom: 41px;
+
+    .tablet({
+      margin-bottom: 163px;
+    });
+
+    .desktop({
+      margin-bottom: 165px;
+    });
+  }
+
+  &--form {
+    margin-bottom: 37px;
+
+    .tablet({
+      margin-bottom: 54px;
+    });
+  }
 }
 
 .page-main__description {
   font-size: 14px;
   color: @black;
+  margin-bottom: 39px;
+
+  .tablet({
+    font-size: 20px;
+    margin-bottom: 66px;
+  });
 }
 
 .page-main__wrapper {
