@@ -1,12 +1,27 @@
 .efficiency {
-  margin-bottom: 29px;
+  margin-bottom: 49px;
 
   .tablet({
-    margin-bottom: 90px;
+    position: relative;
+    margin-bottom: 147px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -104px;
+      left: -7%;
+      width: 100vw;
+      height: 1px;
+      background-color: @lite-gray;
+    }
   });
 
   .desktop({
-    margin-bottom: 69px;
+    margin-bottom: 126px;
+
+    &::after {
+      display: none;
+    }
   });
 }
 
@@ -14,7 +29,12 @@
   .clear-list();
 
   .tablet({
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  });
+
+  .desktop({
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   });
 }
 
@@ -23,6 +43,91 @@
   margin-bottom: 40px;
 
   .tablet({
-    margin-bottom: 32px;
+    margin-bottom: 183px;
   });
+}
+
+.efficiency__item {
+  position: relative;
+  margin-left: 80px;
+
+  .tablet({
+    margin-left: 0;
+    margin-bottom: 245px;
+
+    &::after {
+      content: attr(data-number);
+      position: absolute;
+      bottom: -90%;
+      left: 35%;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: @background-color-gray;
+    }
+  });
+
+  .desktop({
+    margin-bottom: 0;
+  });
+
+  &:not(:last-child) {
+    .mobile({
+      margin-bottom: 26px;
+    });
+  }
+
+  &:last-child {
+    .mobile({
+      width: 199px;
+
+      br {
+        display: none;
+      }
+    });
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    .tablet({
+      margin-bottom: 0;
+    });
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @background-color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .tablet({
+      top: -106px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    });
+  }
+
+  &--healthfulness::before {
+    background-image: url("../img/leaf-icon.svg");
+  }
+
+  &--edition::before {
+    background-image: url("../img/tub-icon.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/cutlery-icon.svg");
+  }
+
+  &--changes::before {
+    background-image: url("../img/alarm-icon.svg");
+  }
 }

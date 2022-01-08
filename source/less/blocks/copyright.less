@@ -1,11 +1,38 @@
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 19px;
   color: @text-gray;
   text-decoration: none;
 
+  .tablet({
+    &:hover {
+      .copyright__link-icon {
+        fill: @background-color-green;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      .copyright__link-icon {
+        fill: @background-color-green;
+      }
+    }
+  });
+
   &--form {
     font-family: "Arial", sans-serif;
     text-transform: none;
   }
+}
+
+.copyright__link-icon {
+  fill: #666666;
+
+  .tablet({
+    margin-left: 22px;
+  });
 }
