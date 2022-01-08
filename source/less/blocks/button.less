@@ -12,15 +12,16 @@
   border: none;
   background-color: @background-color-green;
 
-  &--silver {
-    color: @text-gray;
-    background-color: @background-color-gray;
-  }
-
   .tablet({
-    padding: 14px 0;
+    padding: 17px 0;
     font-size: 20px;
     line-height: 20px;
+
+    &--catalog {
+      padding: 10px 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
   });
 
   &:hover {
@@ -32,5 +33,19 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @background-color-green-dark;
+  }
+
+  &--silver {
+    color: @text-gray;
+    background-color: @background-color-gray;
+
+    &:hover {
+      background-color: @background-color-gray-mid;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: @background-color-gray-mid;
+    }
   }
 }

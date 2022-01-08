@@ -1,7 +1,6 @@
 .gift {
-  height: 290px;
+  min-height: 290px;
   margin-bottom: 35px;
-  text-align: center;
   color: @white;
   background-color: @background-color-green;
   background-image: url("../img/gift-mobile.jpg");
@@ -10,11 +9,56 @@
   background-repeat: no-repeat;
 
   .tablet({
-    height: 200px;
+    min-height: 200px;
     margin-bottom: 76px;
+    background-position: center 63%;
   });
 
   .desktop({
+    align-self: center;
+    width: 245px;
     height: 289px;
+    margin-left: 80px;
+    margin-top: 105px;
+    margin-bottom: 0;
   });
+}
+
+.gift__description {
+  text-align: center;
+  position: relative;
+  padding-top: 187px;
+
+  .tablet({
+    text-align: left;
+    padding-left: 60%;
+    padding-top: 7%;
+  });
+
+  .desktop({
+    text-align: center;
+    padding-left: 0;
+    padding-top: 185px;
+  });
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/gift-icon.svg");
+
+    .tablet({
+      bottom: auto;
+      left: 77px;
+      width: 80px;
+      height: 83px;
+    });
+
+    .desktop({
+      bottom: 50%;
+      left: auto;
+    });
+  }
 }

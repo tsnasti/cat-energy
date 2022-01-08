@@ -1,12 +1,98 @@
+.field {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  &--comment {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field__label {
+  margin-right: 13px;
+}
+
+.field__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+
+  &:focus-within {
+    .field__icon--email {
+      stroke: @background-color-green;
+    }
+
+    .field__icon--phone {
+      fill: @background-color-green;
+    }
+  }
+
+  &--error {
+    .field__icon--email {
+      stroke: @error;
+    }
+
+    .field__icon--phone {
+      fill: @error;
+    }
+  }
+}
+
 .field__input {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 16px;
   font: inherit;
   text-transform: uppercase;
+  border: 1px solid @line-gray;
+  outline: none;
+
+  .tablet({
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+  });
+
+  &:hover {
+    border-color: @dark-gray;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px @text-gray;
+  }
+
+  &--error {
+    box-shadow: inset 0 0 0 2px @error;
+  }
 
   &::placeholder {
     color: @text-gray;
   }
 
+  &--email,
+  &--phone {
+    padding-right: 53px;
+  }
+
   &--comment {
-    width: 100%;
+    height: 150px;
+
+    .tablet({
+      height: 174px;
+    });
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 35%;
+  right: 18px;
+  stroke: @black;
+
+  &--phone {
+    stroke: none;
+    fill: @black;
   }
 }
