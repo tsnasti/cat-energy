@@ -30,20 +30,6 @@
   });
 }
 
-.main-nav__logo-container {
-  display: flex;
-  justify-content: space-between;
-  width: 68%;
-
-  .tablet({
-    width: 174px;
-  });
-
-  .desktop({
-    width: 202px;
-  });
-}
-
 .main-nav__logo {
   margin: 0;
 }
@@ -64,12 +50,18 @@
   }
 }
 
-.main-nav__logo-link:last-child {
-  align-self: center;
-}
-
 .main-nav__image {
   display: block;
+
+  .tablet({
+    width: 174px;
+    height: 52px;
+  });
+
+  .desktop({
+    width: 202px;
+    height: 59px;
+  });
 }
 
 .main-nav__button {
