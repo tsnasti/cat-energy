@@ -102,14 +102,19 @@
             </fieldset>
           </div>
 
-          <fieldset class="questionary__field-group">
-            <legend class="questionary__legend questionary__legend--contacts">Контактные данные<br> (владельца кота)</legend>
+          <fieldset class="questionary__field-group questionary__field-group--mail-phone">
+            <legend class="questionary__legend questionary__legend--contacts title title--sub-title">
+              <span>
+                <span>Контактные данные</span>
+                <span>(владельца кота)</span>
+              </span>
+            </legend>
             <ul class="questionary__list questionary__list--mail-phone">
               <li class="questionary__item">
                 <label class="questionary__label field field--email">
                   <span class="field__label">E-mail:*</span>
                   <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
-                  <div class="field__container">
+                  <span class="field__container">
                     <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
                     <input class="field__input field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                     <svg class="field__icon field__icon--email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,14 +124,14 @@
                       <line y1="1.19766" x2="18" y2="1.19766" stroke-width="1.3" />
                       <path d="M17.35 3.02975L9.00002 9.5242L0.65 3.02975V1.49766H3.5L9.00002 1.49766H14H17.35V3.02975Z" stroke-width="1.3" />
                     </svg>
-                  </div>
+                  </span>
                 </label>
               </li>
               <li class="questionary__item">
                 <label class="questionary__label field field--phone">
                   <span class="field__label">Телефон:*</span>
                   <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
-                  <div class="field__container">
+                  <span class="field__container">
                     <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
                     <input class="field__input field__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                     <svg class="field__icon field__icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,21 +145,25 @@
                         </clipPath>
                       </defs>
                     </svg>
-                  </div>
+                  </span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="questionary__field-group">
-            <legend class="questionary__legend questionary__legend--comment">Комментарий</legend>
+          <fieldset class="questionary__field-group questionary__field-group--comment">
+            <legend class="questionary__legend title title--sub-title">
+              <span>Комментарий</span>
+            </legend>
             <label class="questionary__label field field--comment">
               <textarea class="field__input field__input--comment" name="habits" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
 
-          <fieldset class="questionary__field-group">
-            <legend class="questionary__legend questionary__legend--additionaly">Дополнительно</legend>
+          <fieldset class="questionary__field-group questionary__field-group--additionaly">
+            <legend class="questionary__legend title title--sub-title">
+              <span>Дополнительно</span>
+            </legend>
             <ul class="questionary__list questionary__list--additionaly">
               <li class="questionary__item questionary__item--additionaly">
                 <label class="questionary__choice choice choice--checkbox">

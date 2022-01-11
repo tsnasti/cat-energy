@@ -35,6 +35,33 @@
   }
 }
 
+.page-main__sub-title {
+  position: relative;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 2px;
+    background-color: @background-color-green;
+    z-index: -2;
+  }
+
+  span {
+    padding: 0 37px;
+    background-color: @white;
+
+    .desktop({
+      margin-left: -37px;
+    });
+  }
+}
+
 .page-main__description {
   font-size: 14px;
   color: @black;
@@ -47,9 +74,16 @@
 }
 
 .page-main__wrapper {
+  margin-top: 36px;
+
+  .tablet({
+    margin-top: 80px;
+  });
+
   .desktop({
     display: flex;
     justify-content: space-between;
+    margin-top: 81px;
     margin-bottom: 86px;
   });
 }

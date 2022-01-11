@@ -149,8 +149,10 @@
             <div class="product__content-container product__content-container--big">
               <div class="product__image-wrapper product__image-wrapper--big">
                 <a class="product__link-image" href="#">
-                  <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-big-tablet.png 1x, img/cat-energy-pro-fish-big-tablet@2x.png 2x">
-                  <img class="product__image product__image--big" src="img/cat-energy-pro-fish-big-mobile.png" width="84" height="100" srcset="img/cat-energy-pro-fish-big-mobile@2x.png 2x" alt="Energy pro с рыбой 1000 г.">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-big-tablet.png 1x, img/cat-energy-pro-fish-big-tablet@2x.png 2x">
+                    <img class="product__image product__image--big" src="img/cat-energy-pro-fish-big-mobile.png" width="84" height="100" srcset="img/cat-energy-pro-fish-big-mobile@2x.png 2x" alt="Energy pro с рыбой 1000 г.">
+                  </picture>
                 </a>
               </div>
               <div class="product__content-wrapper product__content-wrapper--big">
@@ -285,15 +287,16 @@
         </ul>
       </section>
 
+      <h2 class="page-main__sub-title title title--sub-title">
+        <span>Дополнительные товары</span>
+      </h2>
       <div class="page-main__wrapper">
         <section class="additionaly">
-          <h2 class="additionaly__title additionaly__title--big">Дополнительные товары</h2>
+          <h2 class="visually-hidden">Добавки</h2>
           <ul class="additionaly__list">
             <li class="additionaly__item">
               <div class="additionaly__wrapper">
-                <a class="additionaly__link" href="#">
-                  <h3 class="additionaly__title additionaly__title--small">Сахарозаменитель</h3>
-                </a>
+                <a class="additionaly__link" href="#">Сахарозаменитель</a>
                 <dl class="additionaly__list-specifications">
                   <dt class="additionaly__term">1 упаковка (100 г)</dt>
                   <dd class="additionaly__definition">200 Р.</dd>
@@ -304,9 +307,7 @@
 
             <li class="additionaly__item">
               <div class="additionaly__wrapper">
-                <a class="additionaly__link" href="#">
-                  <h3 class="additionaly__title additionaly__title--small">Питьевая вода</h3>
-                </a>
+                <a class="additionaly__link" href="#">Питьевая вода</a>
                 <dl class="additionaly__list-specifications">
                   <dt class="additionaly__term">5 литров</dt>
                   <dd class="additionaly__definition">50 Р.</dd>
@@ -317,9 +318,7 @@
 
             <li class="additionaly__item">
               <div class="additionaly__wrapper">
-                <a class="additionaly__link" href="#">
-                  <h3 class="additionaly__title additionaly__title--small">Молоко</h3>
-                </a>
+                <a class="additionaly__link" href="#">Молоко</a>
                 <dl class="additionaly__list-specifications">
                   <dt class="additionaly__term">1 литр</dt>
                   <dd class="additionaly__definition">100 Р.</dd>
@@ -330,9 +329,7 @@
 
             <li class="additionaly__item">
               <div class="additionaly__wrapper">
-                <a class="additionaly__link" href="#">
-                  <h3 class="additionaly__title additionaly__title--small">Витамины</h3>
-                </a>
+                <a class="additionaly__link" href="#">Витамины</a>
                 <dl class="additionaly__list-specifications">
                   <dt class="additionaly__term">1 упаковка (30 г)</dt>
                   <dd class="additionaly__definition">300 Р.</dd>
