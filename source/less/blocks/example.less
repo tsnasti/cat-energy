@@ -218,6 +218,10 @@
 .example__slider {
   margin-top: 20px;
   text-align: center;
+
+  .desktop({
+    position: relative;
+  });
 }
 
 .example__image-wrapper {
@@ -225,6 +229,12 @@
     display: flex;
     justify-content: center;
     width: 592px;
+    margin: 0 auto;
+  });
+
+  .desktop({
+    position: absolute;
+    top: -190px;
   });
 }
 
@@ -248,16 +258,19 @@
     position: absolute;
     top: 0;
     height: 100%;
+    max-width: none;
   });
 
   &--before {
     .tablet({
+      width: 677px;
       left: 0;
     });
   }
 
   &--after {
     .tablet({
+      width: 545px;
       right: 0;
     });
   }
@@ -285,6 +298,11 @@
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
       }
     }
+  });
+
+  .desktop({
+    width: 110%;
+    padding-top: 355px;
   });
 }
 

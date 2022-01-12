@@ -6,10 +6,15 @@
   .mobile({
     height: 302px;
     text-align: center;
-    background-color: @background-color-green;
+    background-color: @background-color-green-image;
     background-image: url("../img/background-promo-mobile.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position: center;
+
+    .retina({
+      background-image: url("../img/background-promo-mobile@2x.png");
+    })
   });
 
   .tablet({
@@ -22,6 +27,12 @@
   });
 }
 
+.promo__container {
+  .desktop({
+    display: flex;
+  });
+}
+
 .promo__wrapper {
   .tablet({
     margin-left: 90px;
@@ -29,6 +40,7 @@
 
   .desktop({
     margin-left: 80px;
+    margin-top: 111px;
   });
 }
 
@@ -67,12 +79,14 @@
   });
 
   .tablet({
-    margin-top: 49px;
+    position: relative;
   });
 }
 
 .promo__link {
   .tablet({
+    position: absolute;
+    top: 30px;
     width: 244px;
   });
 }
@@ -81,11 +95,18 @@
   margin: 0;
 
   .mobile({
+    width: 280px;
+    margin: 0 auto;
     transform: translateY(-20%);
     margin-top: 29px;
   });
 
   .tablet({
     text-align: center;
+  });
+
+  .desktop({
+    transform: translateX(-45px);
+    margin-bottom: 44px;
   });
 }

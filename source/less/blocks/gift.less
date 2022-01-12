@@ -12,6 +12,7 @@
     min-height: 200px;
     margin-bottom: 76px;
     background-position: center 63%;
+    background-size: cover;
   });
 
   .desktop({
@@ -19,14 +20,18 @@
     width: 245px;
     height: 289px;
     margin-left: 80px;
-    margin-top: 105px;
     margin-bottom: 0;
+  });
+
+  .retina({
+    background-image: url("../img/gift-mobile@2x.png");
   });
 }
 
 .gift__description {
   text-align: center;
   position: relative;
+  margin: 0;
   padding-top: 187px;
 
   .tablet({
@@ -38,7 +43,7 @@
   .desktop({
     text-align: center;
     padding-left: 0;
-    padding-top: 185px;
+    padding-top: 172px;
   });
 
   &::before {
@@ -57,8 +62,7 @@
     });
 
     .desktop({
-      bottom: 50%;
-      left: auto;
+      bottom: 42%;
     });
   }
 }

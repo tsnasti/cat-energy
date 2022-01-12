@@ -11,88 +11,12 @@
   });
 }
 
-.additionaly__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: @black;
-
-  .tablet({
-    font-size: 36px;
-    line-height: 36px;
-  });
-
-  &--big {
-    position: relative;
-    width: 226px;
-    margin-top: 0;
-    margin-bottom: 36px;
-    padding-right: 22px;
-    padding-left: 20px;
-    background-color: @white;
-
-    .tablet({
-      width: 338px;
-      margin-bottom: 80px;
-      padding: 0 36px;
-    });
-
-    .desktop({
-      padding-right: 35px;
-      padding-left: 0;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        bottom: 50%;
-        left: -40px;
-        width: 380px;
-        height: 10px;
-        background-color: @white;
-        z-index: -1;
-      }
-    });
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 60%;
-      bottom: 60%;
-      left: -23%;
-      width: 100vw;
-      height: 2px;
-      background-color: @background-color-green;
-      z-index: -2;
-
-      .tablet({
-        left: -16%;
-      });
-
-      .desktop({
-        left: -42%;
-      });
-    }
-  }
-
-  &--small {
-    margin: 0;
-    margin-bottom: 13px;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-
-    .tablet({
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 0;
-    });
-  }
-}
-
 .additionaly__list {
   .clear-list();
+
+  .desktop({
+    border-top: 1px solid @dark-gray;
+  });
 }
 
 .additionaly__item {
@@ -115,7 +39,6 @@
     padding-top: 15px;
     padding-bottom: 17px;
     border: none;
-    border-top: 1px solid @dark-gray;
     border-bottom: 1px solid @dark-gray;
   });
 }
@@ -134,7 +57,21 @@
 }
 
 .additionaly__link {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: @black;
+  text-transform: uppercase;
   text-decoration: none;
+
+  .tablet({
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  });
 }
 
 .additionaly__list-specifications {
