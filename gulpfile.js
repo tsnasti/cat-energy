@@ -133,9 +133,9 @@ export const build = gulp.series(
     styles,
     html,
     svg,
-    sprite,
     createWebp
   ),
+  sprite,
 );
 
 // Default
@@ -149,9 +149,9 @@ export default gulp.series(
     styles,
     html,
     svg,
-    sprite,
     createWebp
   ),
+  sprite,
   gulp.series(
     server,
     watcher
