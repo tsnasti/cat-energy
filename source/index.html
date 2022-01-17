@@ -7,9 +7,11 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -55,12 +57,9 @@
         </div>
         <p class="promo__image">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-promo-desktop.webp 1x, img/index-promo-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-promo-tablet.webp 1x, img/index-promo-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/index-promo-mobile.webp 1x, img/index-promo-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-promo-desktop.png 1x, img/index-promo-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png 1x, img/index-promo-tablet@2x.png 2x">
-            <img src="img/index-promo-mobile.png" srcset="img/index-promo-mobile@2x.png 2x" alt="Промо продукции питания для котов">
+            <img src="img/index-promo-mobile.png" width="280" height="270" srcset="img/index-promo-mobile@2x.png 2x" alt="Промо продукции питания для котов">
           </picture>
         </p>
       </div>
