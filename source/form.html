@@ -131,7 +131,7 @@
               </li>
               <li class="questionary__item">
                 <label class="questionary__label field field--phone">
-                  <span class="field__label">Телефон:*</span>
+                  <span class="field__label field__label--phone">Телефон:*</span>
                   <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
                   <span class="field__container">
                     <!--Чтобы в поле отображалось состояние при ошибке необходимо добавить модификатор error-->
@@ -155,7 +155,7 @@
           </fieldset>
 
           <fieldset class="questionary__field-group questionary__field-group--additionaly">
-            <legend class="questionary__legend title title--sub-title">
+            <legend class="questionary__legend questionary__legend--additionaly title title--sub-title">
               <span>Дополнительно</span>
             </legend>
             <ul class="questionary__list questionary__list--additionaly">
@@ -190,7 +190,7 @@
             </ul>
           </fieldset>
           <div class="questionary__button-note">
-            <button class="questionary__button button" type="submit">Отправить заявку</button>
+            <button class="questionary__button button button--inner button--form" type="submit">Отправить заявку</button>
             <p class="questionary__note note">* — Обязательные поля</p>
           </div>
         </form>
@@ -202,7 +202,10 @@
       <div class="contacts__container container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-          <p class="contacts__address contacts__address--form">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <div class="contacts__address-container">
+            <p class="contacts__address contacts__address--form">ул. Большая<br> Конюшенная, д. 19/8</p>
+            <p class="contacts__address contacts__address--form">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <p class="contacts__map">

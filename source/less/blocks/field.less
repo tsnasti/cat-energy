@@ -9,7 +9,15 @@
 }
 
 .field__label {
-  margin-right: 13px;
+  margin-right: 11px;
+
+  .tablet({
+    margin-right: 21px;
+
+    &--phone {
+      margin-right: 15px;
+    }
+  });
 }
 
 .field__container {
@@ -39,10 +47,8 @@
 }
 
 .field__input {
-  padding-top: 13px;
+  padding: 13px 15px;
   padding-bottom: 14px;
-  padding-left: 15px;
-  padding-right: 16px;
   font: inherit;
   text-transform: uppercase;
   border: 1px solid @line-gray;
@@ -51,7 +57,7 @@
   .tablet({
     padding-top: 10px;
     padding-bottom: 11px;
-    padding-left: 19px;
+    padding-left: 16px;
     padding-right: 19px;
   });
 
@@ -77,10 +83,12 @@
   }
 
   &--comment {
-    height: 150px;
+    height: 130px;
+    padding: 10px 15px;
 
     .tablet({
-      height: 174px;
+      height: 154px;
+      padding: 10px 19px;
     });
   }
 }

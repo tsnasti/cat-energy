@@ -9,13 +9,14 @@
   .tablet({
     display: flex;
     justify-content: space-between;
-    padding-top: 57px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 58px;
     padding-bottom: 56px;
   });
 
   .desktop({
-    padding-top: 59px;
-    padding-bottom: 56px;
+    padding: 56px 0;
   });
 }
 
@@ -35,14 +36,20 @@
     }
 
     &--logo {
-      padding-bottom: 32px;
+      padding-bottom: 31px;
     }
 
     &--social {
-      padding-top: 24px;
-      padding-bottom: 20px;
+      padding-top: 21px;
+      padding-bottom: 16px;
     }
   });
+
+  &--social {
+    .desktop({
+      margin-left: -21px;
+    });
+  }
 }
 
 .page-footer__logo-link {

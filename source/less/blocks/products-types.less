@@ -16,12 +16,13 @@
   .desktop({
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   });
 }
 
 .products-types__item {
   position: relative;
-  padding: 22px 20px;
+  padding: 19px 20px;
   padding-top: 30px;
   margin-bottom: 20px;
   background-color: @background-color-gray;
@@ -40,32 +41,32 @@
   &::before {
     content: "";
     position: absolute;
-    top: 22px;
     height: 50px;
     background-repeat: no-repeat;
 
     .tablet({
-      top: 24%;
-      right: 52px;
+      right: 61px;
     });
 
     .desktop({
-      top: 47px;
       right: auto;
     });
   }
 
   &--slimming::before {
+    top: 20px;
     width: 50px;
     background-image: url("../img/cat-slim-mobile.svg");
 
     .tablet({
+      top: 80px;
       width: 200px;
       height: 211px;
       background-image: url("../img/cat-slim-tablet.svg");
     });
 
     .desktop({
+      top: 41px;
       width: 100px;
       height: 106px;
       background-image: url("../img/cat-slim-desktop.svg");
@@ -77,18 +78,21 @@
     background-image: url("../img/cat-weight-mobile.svg");
 
     .mobile({
-      left: 7px;
+      top: 23px;
+      left: 13px;
     });
 
     .tablet({
-      right: 32px;
+      top: 90px;
+      right: 27px;
       width: 268px;
       height: 200px;
       background-image: url("../img/cat-weight-tablet.svg");
     });
 
     .desktop({
-      left: 27px;
+      top: 47px;
+      left: 34px;
       right: auto;
       width: 134px;
       height: 100px;
@@ -99,7 +103,7 @@
 
 .products-types__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   margin-left: 71px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -116,14 +120,14 @@
   });
 
   .desktop({
-    margin-bottom: 73px;
+    margin-bottom: 72px;
     margin-left: 162px;
   });
 }
 
 .products-types__description {
   margin-bottom: 19px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   .mobile({
     border-bottom: 1px solid @mid-gray;
@@ -131,19 +135,19 @@
 
   .tablet({
     width: 57%;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
     color: @black;
   });
 
   .desktop({
     width: 467px;
-    margin-bottom: 27px;
+    margin-bottom: 7px;
   });
 }
 
 .products-types__link {
   position: relative;
-  padding-right: 57px;
+  padding-right: 47px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -152,6 +156,7 @@
   text-decoration: none;
 
   .tablet({
+    padding-right: 57px;
     font-size: 20px;
     line-height: 30px;
     transition: opacity 0.2s;

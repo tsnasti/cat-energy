@@ -11,7 +11,7 @@
 
   .desktop({
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 110%;
+    width: 107%;
   });
 }
 
@@ -41,7 +41,7 @@
   });
 
   .tablet({
-    margin-bottom: 141px;
+    margin-bottom: 143px;
     padding: 0 37px;
     padding-bottom: 39px;
     background-color: @background-color-gray;
@@ -56,7 +56,7 @@
   });
 
   &--more {
-    padding-top: 40px;
+    padding-top: 37px;
     text-align: center;
 
     .tablet({
@@ -105,11 +105,13 @@
 .product__content-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 24px;
 
   &--big {
-    margin-bottom: 13px;
+    margin-top: -5px;
+    margin-bottom: 15px;
   }
 
   .tablet({
@@ -128,10 +130,10 @@
   });
 
   .tablet({
-    transform: translateY(-45px);
+    transform: translateY(-47px);
 
     &--big {
-      transform: translateY(-60px);
+      transform: translateY(-75px);
     }
   });
 
@@ -152,7 +154,8 @@
   display: block;
 
   .mobile({
-    margin-left: 35%;
+    margin-left: 25%;
+    margin-top: 14px;
   });
 
   .tablet({
@@ -162,7 +165,7 @@
     }
 
     &--big {
-      width: 192px;
+      width: 168px;
       height: 200px;
     }
   });
@@ -191,9 +194,9 @@
       height: 2px;
       background-color: @line-dark-gray;
 
-      .desktop({
-        width: 60px;
+      .tablet({
         left: -30px;
+        width: 60px;
       });
     }
 
@@ -214,16 +217,16 @@
 
   .tablet({
     width: 100%;
-    transform: translateY(-11px);
+    transform: translateY(-14px);
 
     &--big {
-      transform: translateY(-35px);
+      transform: translateY(-42px);
     }
   });
 
   .desktop({
     &--big {
-      transform: translateY(-40px);
+      transform: translateY(-30px);
     }
   });
 }
@@ -256,7 +259,11 @@
     padding-top: 39px;
 
     .tablet({
-      padding-top: 79px;
+      padding-top: 74px;
+    });
+
+    .desktop({
+      padding-top: 76px;
     });
   }
 }
@@ -269,6 +276,7 @@
 .product__item-specifications {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .tablet({
     position: relative;
@@ -305,14 +313,23 @@
 }
 
 .product__button {
-
   .tablet({
     margin-top: 33px;
-
-    &--big {
-      margin-top: 8px;
-    }
   });
+
+  .desktop({
+    margin-top: 20px;
+  });
+
+  &--big {
+    .tablet({
+      margin-top: -9px;
+    });
+
+    .desktop({
+      margin-top: 2px;
+    });
+  }
 
   &--more {
     margin-top: 21px;
