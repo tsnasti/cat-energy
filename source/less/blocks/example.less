@@ -1,9 +1,9 @@
 .example {
-  padding-bottom: 48px;
+  padding-bottom: 44px;
   background-color: @background-color-gray-dark;
 
   .tablet({
-    padding-bottom: 61px;
+    padding-bottom: 51px;
     background: linear-gradient(to bottom, #FFFFFF 50%, #EAEAEA 50%);
   });
 
@@ -17,23 +17,24 @@
 .example__container {
   .desktop({
     display: flex;
+    flex-wrap: wrap;
   });
 }
 
 .example__wrapper {
   .desktop({
-    padding-top: 70px;
+    padding-top: 55px;
     width: 50%;
   });
 }
 
 .example__title-container {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 28px;
 
   .tablet({
     margin: 0 auto;
-    padding-bottom: 63px;
+    padding-bottom: 47px;
   });
 
   .desktop({
@@ -59,6 +60,10 @@
 }
 
 .example__description {
+  .tablet({
+    padding-right: 8px;
+  });
+
   .desktop({
     width: 436px;
   });
@@ -68,6 +73,7 @@
   .tablet({
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   });
 
   .desktop({
@@ -78,19 +84,20 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0 22px;
   text-align: center;
 
   .tablet({
-    width: 50%;
-    margin-top: 69px;
-    padding: 0 32px;
+    width: 47%;
+    margin-top: 54px;
+    padding: 0 24px;
   });
 
   .desktop({
-    width: 55%;
+    width: 54%;
     margin-top: 84px;
     margin-bottom: 55px;
   });
@@ -104,18 +111,18 @@
     content: "";
     position: absolute;
     left: -21px;
-    bottom: 30%;
+    bottom: 25%;
     z-index: -1;
-    width: 124px;
-    height: 56px;
+    width: 121px;
+    height: 53px;
     border: 1px solid @dark-gray;
     border-radius: 3px;
 
     .tablet({
-      left: -24px;
+      left: -26px;
       bottom: 10%;
-      width: 162px;
-      height: 72px;
+      width: 161px;
+      height: 70px;
     });
   }
 }
@@ -130,13 +137,13 @@
 
 .example__definition {
   margin: 0;
-  padding: 0 14px;
+  padding: 0 11px;
   font-size: 12px;
   line-height: 12px;
   background-color: @background-color-gray-dark;
 
   .tablet({
-    padding: 0 8px;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 14px;
     background-color: @white;
@@ -154,16 +161,18 @@
 .example__result-wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   .tablet({
     display: block;
     align-self: center;
+    margin-top: 18px;
   });
 
   .desktop({
     display: flex;
     justify-content: space-between;
-    width: 57%;
+    width: 54%;
   });
 }
 
@@ -177,12 +186,13 @@
   text-transform: uppercase;
 
   .tablet({
+    margin-bottom: 9px;
     text-align: right;
     font-size: 20px;
   });
 
   &--term {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
     font-size: 24px;
     line-height: 24px;
 
@@ -198,7 +208,6 @@
     font-size: 16px;
 
     .tablet({
-      padding-bottom: 2px;
       font-size: 20px;
       line-height: 30px;
       border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
@@ -216,11 +225,16 @@
 }
 
 .example__slider {
-  margin-top: 20px;
+  margin-top: 41px;
   text-align: center;
+
+  .tablet({
+    margin-top: 57px;
+  });
 
   .desktop({
     position: relative;
+    margin-top: 10px;
   });
 }
 
@@ -235,6 +249,7 @@
   .desktop({
     position: absolute;
     top: -190px;
+    left: 18px;
   });
 }
 
@@ -264,7 +279,8 @@
   &--before {
     .tablet({
       width: 677px;
-      left: 0;
+      top: -9px;
+      left: -3px;
     });
   }
 
@@ -280,11 +296,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 71%;
   margin: 0 auto;
+  margin-top: 14px;
 
   .tablet({
-    width: 80%;
+    width: 81%;
+    margin-top: 31px;
 
     &:hover {
       .example__button--toggle {
@@ -301,14 +319,19 @@
   });
 
   .desktop({
-    width: 110%;
-    padding-top: 355px;
+    width: 103%;
+    padding-top: 322px;
+    margin-left: 32px;
   });
 }
 
 .example__button-wrapper {
   position: relative;
   transform: translateY(-3px);
+
+  .tablet({
+    transform: translateY(-11px);
+  });
 }
 
 .example__button {
@@ -343,8 +366,7 @@
     .tablet({
       top: auto;
       bottom: auto;
-      left: 50%;
-      right: 50%;
+      left: 47%;
       width: 34px;
       height: 34px;
       background-color: @white;
