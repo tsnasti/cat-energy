@@ -9,7 +9,8 @@
 }
 
 .field__label {
-  margin-right: 11px;
+  width: 100%;
+  margin-right: 15px;
 
   .tablet({
     margin-right: 21px;
@@ -47,8 +48,8 @@
 }
 
 .field__input {
-  padding: 13px 15px;
-  padding-bottom: 14px;
+  padding: 12px 14px;
+  padding-bottom: 13px;
   font: inherit;
   text-transform: uppercase;
   border: 1px solid @line-gray;
@@ -79,15 +80,20 @@
 
   &--email,
   &--phone {
-    padding-right: 53px;
+    margin-left: -4px;
+
+    .tablet({
+      padding-left: 23px;
+      padding-right: 53px;
+    });
   }
 
   &--comment {
     height: 130px;
-    padding: 10px 15px;
+    padding: 10px 13px;
 
     .tablet({
-      height: 154px;
+      height: 150px;
       padding: 10px 19px;
     });
   }
@@ -95,13 +101,21 @@
 
 .field__icon {
   position: absolute;
-  top: 35%;
-  right: 18px;
+  top: 34%;
+  right: 14px;
   fill: none;
   stroke: @black;
+
+  .desktop({
+    right: 18px;
+  });
 
   &--phone {
     stroke: none;
     fill: @black;
+
+    .desktop({
+      top: 26%;
+    });
   }
 }

@@ -24,7 +24,9 @@
       &::after {
         content: "";
         position: absolute;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
         height: 1px;
         background-color: @mid-gray;
       }
@@ -33,7 +35,7 @@
     margin-bottom: 27px;
 
     .tablet({
-      margin-bottom: 65px;
+      margin-bottom: 70px;
     });
 
     .desktop({

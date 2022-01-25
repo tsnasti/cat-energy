@@ -4,11 +4,12 @@
 
   .tablet({
     margin-top: 63px;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   });
 
   .desktop({
-    margin-bottom: 82px;
+    margin-top: 66px;
+    margin-bottom: 85px;
   });
 }
 
@@ -23,15 +24,15 @@
   .questionary__field-group:nth-child(2) {
     .mobile({
       position: relative;
-      padding-bottom: 24px;
+      padding-bottom: 23px;
 
       &:first-child {
-        margin-bottom: 30px;
+        margin-bottom: 29px;
       }
 
       &:nth-child(2) {
         padding-bottom: 25px;
-        margin-bottom: 26px;
+        margin-bottom: 28px;
       }
 
       &::after {
@@ -54,7 +55,7 @@
 
 .questionary__legend {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
   margin-left: -20px;
   text-transform: none;
 
@@ -66,7 +67,7 @@
   &--contacts {
     margin-bottom: 37px;
 
-    .desktop({
+    .tablet({
       margin-bottom: 77px;
     });
   }
@@ -100,18 +101,18 @@
 .questionary__field-group {
   .clear-fieldset();
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   .tablet({
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   });
 
   .desktop({
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   });
 
   &--comment {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 
     .tablet({
       margin-bottom: 64px;
@@ -129,8 +130,10 @@
   }
 
   &--additionaly {
+    margin-bottom: 22px;
+
     .tablet({
-      margin-bottom: 37px;
+      margin-bottom: -19px;
     });
 
     .desktop({
@@ -153,10 +156,12 @@
   }
 
   &--mail-phone::after {
-    top: -69%;
+    top: -68%;
+    left: 48%;
 
     .tablet({
       top: -70%;
+      left: 50%;
     });
 
     .desktop({
@@ -165,22 +170,22 @@
   }
 
   &--comment::after {
-    top: -29%;
+    top: -32%;
 
     .tablet({
-      top: -52%;
+      top: -53%;
     });
   }
 
   &--additionaly::after {
-    top: -32%;
+    top: -34%;
 
     .tablet({
-      top: -74%;
+      top: -55%;
     });
 
     .desktop({
-      top: -112%;
+      top: -106%;
     });
   }
 }
@@ -256,11 +261,16 @@
 }
 
 .questionary__button-note {
-  margin-top: 41px;
+  margin-top: 39px;
 
   .tablet({
     display: flex;
     flex-wrap: wrap;
+    margin-top: 41px;
+  });
+
+  .desktop({
+    margin-top: 46px;
   });
 }
 
@@ -281,4 +291,8 @@
 .questionary__note {
   margin-top: 21px;
   text-align: center;
+
+  .tablet({
+    margin-top: 16px;
+  });
 }
