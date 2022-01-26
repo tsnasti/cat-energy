@@ -57,6 +57,10 @@
         </div>
         <p class="promo__image">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-promo-desktop.webp 1x, img/index-promo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-promo-tablet.webp 1x, img/index-promo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-promo-mobile.webp 1x, img/index-promo-mobile@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/index-promo-desktop.png 1x, img/index-promo-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png 1x, img/index-promo-tablet@2x.png 2x">
             <img src="img/index-promo-mobile.png" width="280" height="270" srcset="img/index-promo-mobile@2x.png 2x" alt="Промо продукции питания для котов">
@@ -129,12 +133,18 @@
           <div class="example__image-wrapper">
             <div class="example__image-container example__image-container--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                 <img class="example__image example__image--before" src="img/cat-before-mobile.png" width="280" height="232" srcset="img/cat-before-mobile@2x.png" alt="Фото кота до">
               </picture>
             </div>
             <div class="example__image-container example__image-container--after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img class="example__image example__image--after" src="img/cat-after-mobile.png" width="243" height="232" srcset="img/cat-after-mobile@2x.png 2x" alt="Фото кота после">
               </picture>
