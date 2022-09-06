@@ -1,4 +1,5 @@
 {
+  "homepage": "https://tsnasti.github.io/1924187-cat-energy-24/",
   "name": "cat-energy-24",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
@@ -7,6 +8,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "^6.0.0",
+    "gh-pages": "^4.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-less": "5.0.0",
@@ -26,6 +28,8 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "gulp"
   },
   "browserslist": [
