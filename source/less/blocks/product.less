@@ -173,39 +173,43 @@
   });
 }
 
+.product__link-container {
+  position: relative;
+}
+
 .product__link {
   text-decoration: none;
 
   &--more {
-    position: relative;
-
     &::before,
     &::after {
       content: "";
       position: absolute;
-      left: -15px;
       right: 0;
-      width: 30px;
-      height: 2px;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: @line-dark-gray;
-
-      .tablet({
-        left: -30px;
-        width: 60px;
-      });
-
-      .desktop({
-        left: -35px;
-      });
     }
 
     &::before {
-      transform: rotate(90deg);
+      width: 2px;
+      height: 30px;
+      transform: translateY(-50%);
+
+      .tablet({
+        height: 60px;
+      });
     }
 
     &::after {
+      width: 30px;
+      height: 2px;
       bottom: 0;
       top: 0;
+
+      .tablet({
+        width: 60px;
+      });
     }
   }
 }
