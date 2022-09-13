@@ -20,18 +20,6 @@
   });
 
   &--inner {
-    .mobile({
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: 1px;
-        background-color: @mid-gray;
-      }
-    });
-
     margin-bottom: 27px;
 
     .tablet({
@@ -45,6 +33,10 @@
 }
 
 .page-header__container {
+  .mobile({
+    width: 100%;
+  });
+
   .tablet({
     margin-bottom: 62px;
   });
